@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cookie&family=Lemon&family=Lobster&family=Playfair+Display:ital@1&family=Rubik+Doodle+Shadow&family=Russo+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>Github User Info</h1>
+    <h2 id="welcome_msg"></h2>
+    <form id="userForm" autocomplete="off">
+        <main id="container">
+            <div id="sub-container-1">
+                <label for="Username"><span class="user-span">Username</span></label>
+
+                <input type="text" name="username" id="Username" placeholder="  Type Your Username..." required>
+
+                <button type="submit"><span class="search-span">&#128270;</span></button>
+            </div>
+            <div id="previous-Searches" style="display: none;">
+                <div id="sub-container-2">
+
+                </div>
+            </div>
+        </main>
+    </form>
+    <div class="info" style="display: none;">
+        <div class="item login"></div>
+        <div class="item name"></div>
+        <div class="item id"></div>
+        <div class="item bio"></div>
+        <div class="item followers"></div>
+        <div class="item following"></div>
+        <div class="item public_repos"></div>
+        <div class="item public_gists"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
